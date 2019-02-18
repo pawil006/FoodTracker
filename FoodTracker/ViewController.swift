@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         nameTextField.delegate = self
     }
 
-    
-    @IBAction func setDafaultLabelText(_ sender: UIButton) {
-        mealNameLabel.text = "Default Text"
-    }
     //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         //this method throws an event to hide keyboard
